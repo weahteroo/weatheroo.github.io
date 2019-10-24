@@ -28,24 +28,3 @@ function drawWeather( d ) {
 		document.body.className = 'clear';
 	}
 }
-
-function defaultDescription(){
-	document.getElementById('city_name').value = "";
-	document.body.className = "bg";
-	document.getElementById('description').innerHTML = "Welcome";
-	document.getElementById('temp').innerHTML = "TO";
-	document.getElementById('location').innerHTML = "weatherOO";
-}
-
-document.getElementById("city_name")
-    .addEventListener("keyup", function(event) {
-    event.preventDefault();
-    if (event.keyCode === 13) {
-        document.getElementById("show_weather").click();
-    }
-});
-
-
-window.onload = function() {
-	defaultDescription();
-}
